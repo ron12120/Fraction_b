@@ -95,6 +95,7 @@ TEST_SUITE("Overloaded <= and >= operators tests") {
         Fraction frac10{7, 5};
         Fraction frac11{4,3};
 
+    
         SUBCASE(">= operator test") {
             CHECK_GE(frac1, frac2);
             CHECK_GE(frac3, frac1);

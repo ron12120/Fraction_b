@@ -90,7 +90,6 @@ TEST_CASE("Fraction division test") {
     Fraction f = d / e; // 4/5 / 2/5 = 4/5 * 5/2 = 20 / 10 = 2/1
     CHECK(((f.getNumerator() == 2) && (f.getDenominator() == 1)));
     CHECK(__gcd(f.getNumerator(), f.getDenominator()) == 1);
-
     Fraction g = e / d; // 2/5 / 4/5 = 2/5 * 5/4 = 10 / 20 = 1/2
     CHECK(((g.getNumerator() == 1) && (g.getDenominator() == 2)));
     CHECK(__gcd(g.getNumerator(), g.getDenominator()) == 1);
